@@ -12,16 +12,16 @@ Vue.config.debug = true;
 
 // 路由配置
 const router = new VueRouter({
-    esModule: false,
-    routes: [
-        {
-            path: '/button',
-            component: resolve => require(['./routers/button.vue'], resolve)
-        }
-    ]
+  esModule: false,
+  routes: [
+    {
+      path: '/button',
+      component: resolve => require(['./routers/button.vue'], resolve)
+    }
+  ]
 });
 
 new Vue({
-    router: router,
-    render: h => h(App)
+  router: router,
+  render: h => h(App)
 }).$mount('#app');

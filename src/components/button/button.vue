@@ -1,10 +1,8 @@
 <template>
-    <div>button</div>
+  <div>button</div>
 </template>
 
 <script>
-export default {
-
-};
+export default {};
 </script>
 
