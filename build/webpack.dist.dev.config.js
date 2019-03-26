@@ -14,8 +14,8 @@ module.exports = merge(webpackBaseConfig, {
     output: {
         path: path.resolve(__dirname, '../dist'),
         publicPath: '/dist/',
-        filename: 'zui.js',
-        library: 'zui',
+        filename: 'oui.js',
+        library: 'oui',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },

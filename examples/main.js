@@ -2,10 +2,10 @@ import 'babel-polyfill';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './app.vue';
-import zui from '../src/index';
+import oui from '../src/index';
 
 Vue.use(VueRouter);
-Vue.use(zui);
+Vue.use(oui);
 
 // 开启debug模式
 Vue.config.debug = true;

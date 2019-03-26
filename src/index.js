@@ -1,13 +1,13 @@
 import Button from './components/button';
 
-const zui = {
+const oui = {
     Button
 };
 
 const install = function(Vue) {
 
-    Object.keys(zui).forEach(key => {
-        Vue.component(key, zui[key]);
+    Object.keys(oui).forEach(key => {
+        Vue.component(key, oui[key]);
     });
 };
 

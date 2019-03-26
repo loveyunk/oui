@@ -1,11 +1,11 @@
 {
-    "name": "zui",
+    "name": "oui",
     "version": "0.0.1",
-    "title": "zui",
+    "title": "oui",
     "description": "A high quality  UI components Library with Vue.js",
     "homepage": "http://www.loveyunk.com",
     "keywords": [
-        "zui",
+        "oui",
         "vue",
         "vue.js",
         "component",
@@ -13,7 +13,7 @@
         "ui",
         "framework"
     ],
-    "main": "dist/zui.js",
+    "main": "dist/oui.js",
     "files": [
         "dist",
         "src"
