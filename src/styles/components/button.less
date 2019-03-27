@@ -1,0 +1,64 @@
+@btn-prefix-cls: ~'@{oui-prefix}-btn';
+
+.btn-color(@color) {
+  background-color: @color;
+}
+
+.button-size(@padding; @font-size; @border-radius) {
+  padding: @padding;
+  font-size: @font-size;
+  border-radius: @border-radius;
+}
+
+.@{btn-prefix-cls} {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: @btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation; // TODO
+  cursor: pointer;
+  background-image: none;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  line-height: 1.6;
+  user-select: none; // TODO
+  color: white;
+  .button-size(6px 16px, 14px, 6px);
+
+  > span {
+    vertical-align: middle;
+  }
+
+  &-block {
+    width: 100%;
+  }
+
+  .btn-color(@default-color);
+  &-primary {
+    .btn-color(@primary-color);
+  }
+  &-warning {
+    .btn-color(@warning-color);
+  }
+  &-danger {
+    .btn-color(@danger-color);
+  }
+  &-success {
+    .btn-color(@success-color);
+  }
+  &-info {
+    .btn-color(@info-color);
+  }
+  &-inverse {
+    .btn-color(@inverse-color);
+  }
+  &[disabled] {
+    background-color: #bdc3c7;
+    color: rgba(255, 255, 255, 0.75);
+    opacity: 0.7;
+    filter: 'alpha(opacity=70)';
+    cursor: not-allowed;
+  }
+}
