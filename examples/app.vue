@@ -13,6 +13,11 @@
 export default {};
 </script>
 
+<style lang="less">
+@import "../src/styles/index.less";
+</style>
+
+
 <style lang="less" scoped>
 nav {
   margin-bottom: 40px;
