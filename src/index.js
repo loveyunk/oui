@@ -1,22 +1,25 @@
+import Avatar from './components/avatar';
 import Button from './components/button';
 
-const oui = {
+const components = {
+  Avatar,
   Button
 };
 
-const install = function(Vue) {
-  Object.keys(oui).forEach(key => {
-    Vue.component(key, oui[key]);
+const oui = {
+  ...components
+};
+
+const install = function(Vue, opts) {
+  Object.keys(components).forEach(key => {
+    Vue.component(key, components[key]);
   });
 };
 
-// auto install
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-const API = {
-  install
-};
+oui.install = install;
 
-module.exports.default = module.exports = API; // eslint-disable-line no-undef
+module.exports = oui;
