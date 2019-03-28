@@ -1,6 +1,6 @@
 <template>
-  <button :class="classes" :disabled="disabled">
-    <span>
+  <button :class="classes" :disabled="disabled" @click="handleClick">
+    <span v-if="this.$slots.default !== undefined">
       <slot></slot>
     </span>
   </button>
@@ -27,6 +27,12 @@ export default {
       },
       default: 'default'
     },
+    size: {
+      validator(value) {
+        return oneOf(value, ['large', 'small', 'default']);
+      },
+      default: 'default'
+    },
     disabled: {
       type: Boolean,
       default: false
@@ -41,10 +47,17 @@ export default {
       return [
         prefixCls,
         `${prefixCls}-${this.type}`,
+        `${prefixCls}-${this.size}`,
         {
           [`${prefixCls}-block`]: this.block
         }
       ];
+    }
+  },
+  methods: {
+    handleClick(event) {
+      if (this.disabled) return;
+      this.$emit('click', event);
     }
   }
 };

@@ -12,30 +12,39 @@
 
 .@{btn-prefix-cls} {
   display: inline-block;
-  margin-bottom: 0;
   font-weight: @btn-font-weight;
   text-align: center;
   vertical-align: middle;
-  touch-action: manipulation; // TODO
+  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: none;
   outline: none;
   white-space: nowrap;
   line-height: 1.6;
-  user-select: none; // TODO
+  user-select: none;
   color: white;
-  .button-size(6px 16px, 14px, 6px);
+
+  .button-size(@btn-padding-base, @btn-font-size-base, 6px);
+  .btn-color(@default-color);
 
   > span {
     vertical-align: middle;
   }
 
   &-block {
+    display: block;
     width: 100%;
   }
 
-  .btn-color(@default-color);
+  &-large {
+    .button-size(@btn-padding-large, @btn-font-size-large, 6px);
+  }
+
+  &-small {
+    .button-size(@btn-padding-small, @btn-font-size-small, 6px);
+  }
+
   &-primary {
     .btn-color(@primary-color);
   }
@@ -54,6 +63,7 @@
   &-inverse {
     .btn-color(@inverse-color);
   }
+
   &[disabled] {
     background-color: #bdc3c7;
     color: rgba(255, 255, 255, 0.75);
