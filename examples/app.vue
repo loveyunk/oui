@@ -3,6 +3,8 @@
     <nav>
       <ul>
         <li><router-link to="/button">Button</router-link></li>
+        <li><router-link to="/message">Message</router-link></li>
+        <li><router-link to="/badge">badge</router-link></li>
       </ul>
     </nav>
     <router-view></router-view>

@@ -1,0 +1,126 @@
+@badge-prefix-cls: ~'@{oui-prefix}-badge';
+
+.@{badge-prefix-cls} {
+  position: relative;
+  display: inline-block;
+
+  &-count {
+    font-family: 'Monospaced Number'; // TODO
+    position: absolute;
+    z-index: 10;
+    transform: translateX(50%);
+    top: -10px;
+    right: 0;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    min-width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: @danger-color;
+    color: #fff;
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 1px #fff;
+    white-space: nowrap;
+
+    &-primary {
+      background-color: @primary-color;
+    }
+
+    &-success {
+      background-color: @success-color;
+    }
+
+    &-danger {
+      background-color: @danger-color;
+    }
+
+    &-warning {
+      background-color: @warning-color;
+    }
+
+    &-info {
+      background-color: @info-color;
+    }
+
+    &-inverse {
+      background-color: @inverse-color;
+    }
+
+    &-normal {
+      background-color: @default-color;
+    }
+  }
+
+  &-dot {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: @danger-color;
+    z-index: 10;
+    box-shadow: 0 0 0 1px #fff;
+  }
+
+  &-status {
+    line-height: inherit;
+    vertical-align: baseline;
+    &-dot {
+      width: 6px;
+      height: 6px;
+      display: inline-block;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    &-success {
+      background: @success-color;
+    }
+    &-processing {
+      position: relative;
+      background-color: @primary-color;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid @primary-color;
+        border-radius: 50%;
+        animation: statusProcessing 1.2s infinite ease-in-out;
+        content: '';
+      }
+    }
+    &-danger {
+      background: @danger-color;
+    }
+    &-warning {
+      background: @warning-color;
+    }
+    &-default {
+      background: @default-color;
+    }
+
+    &-text {
+      display: inline-block;
+      color: @text-color;
+      font-size: 12px;
+      margin-left: 6px;
+    }
+  }
+}
+
+@keyframes statusProcessing {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
