@@ -1,0 +1,57 @@
+@switch-prefix-cls: ~'@{oui-prefix}-switch';
+
+.@{switch-prefix-cls} {
+  display: inline-block;
+  width: 44px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 22px;
+  vertical-align: middle;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    cursor: pointer;
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+  }
+
+  &-checked {
+    border-color: @primary-color;
+    background-color: @primary-color;
+
+    &:after {
+      left: 25px;
+    }
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+
+    &:after {
+      background: #fff;
+      cursor: not-allowed;
+    }
+  }
+
+  &-disabled&-checked {
+    border-color: @primary-color;
+    background-color: @primary-color;
+    opacity: .4;
+
+    &:after {
+      background: #fff;
+    }
+  }
+}
