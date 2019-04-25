@@ -2,14 +2,18 @@ import Avatar from './components/avatar';
 import Button from './components/button';
 import Message from './components/message';
 import Badge from './components/badge';
+import Icon from './components/icon';
 import OSwitch from './components/switch';
+import Input from './components/input';
 
 const components = {
   Avatar,
   Button,
   Message,
-  Badge
-  OSwitch
+  Badge,
+  Icon,
+  OSwitch,
+  Input
 };
 
 const oui = {

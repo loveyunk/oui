@@ -9,9 +9,9 @@
   </div>
   <div v-else :class="classes">
     <slot></slot>
-    <sup v-if="hasCount" v-show="!hidden" :class="countClasses">{{
-      finalCount
-    }}</sup>
+    <sup v-if="hasCount" v-show="!hidden" :class="countClasses">
+      {{ finalCount }}
+    </sup>
   </div>
 </template>
 
@@ -51,7 +51,7 @@ export default {
           'success',
           'processing',
           'default',
-          'error',
+          'danger',
           'warning'
         ]);
       }

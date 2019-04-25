@@ -47,9 +47,9 @@ export default {
       return [
         prefixCls,
         `${prefixCls}-${this.type}`,
-        `${prefixCls}-${this.size}`,
         {
-          [`${prefixCls}-block`]: this.block
+          [`${prefixCls}-block`]: this.block,
+          [`${prefixCls}-${this.size}`]: this.size !== 'default'
         }
       ];
     }

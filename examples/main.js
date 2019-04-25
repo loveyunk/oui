@@ -25,6 +25,18 @@ const router = new VueRouter({
     {
       path: '/badge',
       component: resolve => require(['./routers/badge/index'], resolve)
+    },
+    {
+      path: '/icon',
+      component: resolve => require(['./routers/icon/index'], resolve)
+    },
+    {
+      path: '/switch',
+      component: resolve => require(['./routers/switch/index'], resolve)
+    },
+    {
+      path: '/input',
+      component: resolve => require(['./routers/input/index'], resolve)
     }
   ]
 });

@@ -67,8 +67,9 @@
 <script>
 export default {
   methods: {
-    handleClick () {
-      console.log('handleClick');
+    handleClick() {
+      /* eslint-disable */
+      console.log("handleClick");
     }
   }
 };
