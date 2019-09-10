@@ -7,41 +7,41 @@ const CompressionPlugin = require('compression-webpack-plugin');
 process.env.NODE_ENV = 'production';
 
 module.exports = merge(webpackBaseConfig, {
-    devtool: 'source-map',
-    entry: {
-        main: './src/index.js'
-    },
-    output: {
-        path: path.resolve(__dirname, '../dist'),
-        publicPath: '/dist/',
-        filename: 'oui.min.js',
-        library: 'oui',
-        libraryTarget: 'umd',
-        umdNamedDefine: true
-    },
-    externals: {
-        vue: {
-            root: 'Vue',
-            commonjs: 'vue',
-            commonjs2: 'vue',
-            amd: 'vue'
-        }
-    },
-    plugins: [
-        // @todo
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': '"production"'
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            parallel: true,
-            sourceMap: true,
-        }),
-        new CompressionPlugin({
-            asset: '[path].gz[query]',
-            algorithm: 'gzip',
-            test: /\.(js|css)$/,
-            threshold: 10240,
-            minRatio: 0.8
-        })
-    ]
+  devtool: 'source-map',
+  entry: {
+    main: './src/index.js'
+  },
+  output: {
+    path: path.resolve(__dirname, '../dist'),
+    publicPath: '/dist/',
+    filename: 'oui.min.js',
+    library: 'oui',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
+  },
+  externals: {
+    vue: {
+      root: 'Vue',
+      commonjs: 'vue',
+      commonjs2: 'vue',
+      amd: 'vue'
+    }
+  },
+  plugins: [
+    // @todo
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': '"production"'
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      parallel: true,
+      sourceMap: true
+    }),
+    new CompressionPlugin({
+      asset: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.(js|css)$/,
+      threshold: 10240,
+      minRatio: 0.8
+    })
+  ]
 });
