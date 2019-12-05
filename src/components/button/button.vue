@@ -8,14 +8,13 @@
 
 <script>
 const prefixCls = 'oui-btn';
-import { oneOf } from '../../utils/assist';
 
 export default {
   name: 'Button',
   props: {
     type: {
       validator(value) {
-        return oneOf(value, [
+        return [
           'default',
           'primary',
           'warning',
@@ -23,13 +22,13 @@ export default {
           'success',
           'info',
           'inverse'
-        ]);
+        ].includes(value);
       },
       default: 'default'
     },
     size: {
       validator(value) {
-        return oneOf(value, ['large', 'small', 'default']);
+        return ['large', 'small', 'default'].includes(value);
       },
       default: 'default'
     },

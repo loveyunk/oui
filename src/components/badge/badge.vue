@@ -16,8 +16,6 @@
 </template>
 
 <script>
-import { oneOf } from '../../utils/assist';
-
 const prefixCls = 'oui-badge';
 
 export default {
@@ -34,7 +32,7 @@ export default {
     },
     type: {
       validator(value) {
-        return oneOf(value, [
+        return [
           'success',
           'primary',
           'normal',
@@ -42,18 +40,18 @@ export default {
           'warning',
           'info',
           'inverse'
-        ]);
+        ].includes(value);
       }
     },
     status: {
       validator(value) {
-        return oneOf(value, [
+        return [
           'success',
           'processing',
           'default',
           'danger',
           'warning'
-        ]);
+        ].includes(value);
       }
     },
     showZero: {
