@@ -1,11 +1,11 @@
-@badge-prefix-cls: ~'@{oui-prefix}-badge';
+@badge-prefix-cls: ~"@{oui-prefix}-badge";
 
 .@{badge-prefix-cls} {
   position: relative;
   display: inline-block;
 
   &-count {
-    font-family: 'Monospaced Number'; // TODO
+    font-family: "Monospaced Number"; // TODO
     position: absolute;
     z-index: 10;
     transform: translateX(50%);
@@ -92,7 +92,7 @@
         border: 1px solid @primary-color;
         border-radius: 50%;
         animation: statusProcessing 1.2s infinite ease-in-out;
-        content: '';
+        content: "";
       }
     }
     &-danger {

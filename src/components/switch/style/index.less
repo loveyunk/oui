@@ -1,4 +1,4 @@
-@switch-prefix-cls: ~'@{oui-prefix}-switch';
+@switch-prefix-cls: ~"@{oui-prefix}-switch";
 
 .@{switch-prefix-cls} {
   display: inline-block;
@@ -14,7 +14,7 @@
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -48,7 +48,7 @@
   &-disabled&-checked {
     border-color: @primary-color;
     background-color: @primary-color;
-    opacity: .4;
+    opacity: 0.4;
 
     &:after {
       background: #fff;
