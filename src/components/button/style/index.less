@@ -64,6 +64,14 @@
     .btn-color(@inverse-color);
   }
 
+  &-group {
+    & > .o-btn {
+      float: left;
+      position: relative;
+      border-radius: 0;
+    }
+  }
+
   &[disabled] {
     background-color: #bdc3c7;
     color: rgba(255, 255, 255, 0.75);

@@ -29,7 +29,7 @@
   "repository": {},
   "author": "loveyunk",
   "dependencies": {
-    "async-validator": "^1.8.2",
+    "async-validator": "^1.12.2",
     "deepmerge": "^2.1.0",
     "element-resize-detector": "^1.1.14",
     "js-calendar": "^1.2.3",

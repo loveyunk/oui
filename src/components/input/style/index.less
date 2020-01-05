@@ -1,0 +1,31 @@
+@input-prefix-cls: ~"@{oui-prefix}-input";
+
+.@{input-prefix-cls} {
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  line-height: 1.5;
+  padding: 4px 7px;
+  font-size: 14px;
+  border: 1px solid #dcdee2;
+  border-radius: 4px;
+  color: #515a6e;
+  background-color: #fff;
+  background-image: none;
+  position: relative;
+  outline: 0;
+  cursor: text;
+
+  &-large {
+    height: 58px;
+    font-size: 18px;
+  }
+
+  &-small {
+    height: 24px;
+    font-size: 12px;
+  }
+
+  &-disabled {
+  }
+}

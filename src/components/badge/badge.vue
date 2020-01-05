@@ -16,7 +16,7 @@
 </template>
 
 <script>
-const prefixCls = 'oui-badge';
+const prefixCls = 'o-badge';
 
 export default {
   name: 'Badge',

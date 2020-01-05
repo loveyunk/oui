@@ -8,6 +8,10 @@
         <li><router-link to="/icon">icon</router-link></li>
         <li><router-link to="/switch">switch</router-link></li>
         <li><router-link to="/input">input</router-link></li>
+        <li><router-link to="/checkbox">checkbox</router-link></li>
+        <li><router-link to="/tabs">tabs</router-link></li>
+        <li><router-link to="/form">form</router-link></li>
+        <li><router-link to="/avatar">avatar</router-link></li>
       </ul>
     </nav>
     <router-view></router-view>

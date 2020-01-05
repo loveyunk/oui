@@ -1,66 +1,73 @@
 <template>
   <div>
     <h2>type</h2>
-    <Button>Default</Button>
-    <Button type="default">Default</Button>
-    <Button type="primary">Primary</Button>
-    <Button type="warning">Warning</Button>
-    <Button type="danger">Danger</Button>
-    <Button type="success">Success</Button>
-    <Button type="info">Info</Button>
-    <Button type="inverse" @click="handleClick">Inverse</Button>
+    <o-button>Default</o-button>
+    <o-button type="default" @click.native="handleClick">Default</o-button>
+    <o-button type="primary">Primary</o-button>
+    <o-button type="warning">Warning</o-button>
+    <o-button type="danger">Danger</o-button>
+    <o-button type="success">Success</o-button>
+    <o-button type="info">Info</o-button>
+    <o-button type="inverse" @click="handleClick">Inverse</o-button>
     <br /><br />
     <h2>disabled</h2>
-    <Button disabled type="default">Default</Button>
-    <Button disabled type="primary">Primary</Button>
-    <Button disabled type="warning">Warning</Button>
-    <Button disabled type="danger">Danger</Button>
-    <Button disabled type="success">Success</Button>
-    <Button disabled type="info">Info</Button>
-    <Button disabled type="inverse" @click="handleClick">Inverse</Button>
+    <o-button disabled type="default">Default</o-button>
+    <o-button disabled type="primary">Primary</o-button>
+    <o-button disabled type="warning">Warning</o-button>
+    <o-button disabled type="danger">Danger</o-button>
+    <o-button disabled type="success">Success</o-button>
+    <o-button disabled type="info">Info</o-button>
+    <o-button disabled type="inverse" @click="handleClick">Inverse</o-button>
     <br /><br />
     <h2>block</h2>
-    <Button block type="default">Default</Button>
+    <o-button block type="default">Default</o-button>
     <p></p>
-    <Button block type="primary">Primary</Button>
+    <o-button block type="primary">Primary</o-button>
     <p></p>
-    <Button block type="warning">Warning</Button>
+    <o-button block type="warning">Warning</o-button>
     <p></p>
-    <Button block type="danger">Danger</Button>
+    <o-button block type="danger">Danger</o-button>
     <p></p>
-    <Button block type="success">Success</Button>
+    <o-button block type="success">Success</o-button>
     <p></p>
-    <Button block type="info">Info</Button>
+    <o-button block type="info">Info</o-button>
     <p></p>
-    <Button block type="inverse">Inverse</Button>
+    <o-button block type="inverse">Inverse</o-button>
     <h2>size</h2>
     <h3>large</h3>
-    <Button size="large">Default</Button>
-    <Button size="large" type="default">Default</Button>
-    <Button size="large" type="primary">Primary</Button>
-    <Button size="large" type="warning">Warning</Button>
-    <Button size="large" type="danger">Danger</Button>
-    <Button size="large" type="success">Success</Button>
-    <Button size="large" type="info">Info</Button>
-    <Button size="large" type="inverse">Inverse</Button>
+    <o-button size="large">Default</o-button>
+    <o-button size="large" type="default">Default</o-button>
+    <o-button size="large" type="primary">Primary</o-button>
+    <o-button size="large" type="warning">Warning</o-button>
+    <o-button size="large" type="danger">Danger</o-button>
+    <o-button size="large" type="success">Success</o-button>
+    <o-button size="large" type="info">Info</o-button>
+    <o-button size="large" type="inverse">Inverse</o-button>
     <h3>default</h3>
-    <Button>Default</Button>
-    <Button type="default">Default</Button>
-    <Button type="primary">Primary</Button>
-    <Button type="warning">Warning</Button>
-    <Button type="danger">Danger</Button>
-    <Button type="success">Success</Button>
-    <Button type="info">Info</Button>
-    <Button type="inverse">Inverse</Button>
+    <o-button>Default</o-button>
+    <o-button type="default">Default</o-button>
+    <o-button type="primary">Primary</o-button>
+    <o-button type="warning">Warning</o-button>
+    <o-button type="danger">Danger</o-button>
+    <o-button type="success">Success</o-button>
+    <o-button type="info">Info</o-button>
+    <o-button type="inverse">Inverse</o-button>
     <h3>small</h3>
-    <Button size="small">Default</Button>
-    <Button size="small" type="default">Default</Button>
-    <Button size="small" type="primary">Primary</Button>
-    <Button size="small" type="warning">Warning</Button>
-    <Button size="small" type="danger">Danger</Button>
-    <Button size="small" type="success">Success</Button>
-    <Button size="small" type="info">Info</Button>
-    <Button size="small" type="inverse">Inverse</Button>
+    <o-button size="small">Default</o-button>
+    <o-button size="small" type="default">Default</o-button>
+    <o-button size="small" type="primary">Primary</o-button>
+    <o-button size="small" type="warning">Warning</o-button>
+    <o-button size="small" type="danger">Danger</o-button>
+    <o-button size="small" type="success">Success</o-button>
+    <o-button size="small" type="info">Info</o-button>
+    <o-button size="small" type="inverse">Inverse</o-button>
+    <h2>button group</h2>
+    <o-button-group>
+      <o-button>左</o-button>
+      <o-button>中</o-button>
+      <o-button>右</o-button>
+    </o-button-group>
+    safdsa
   </div>
 </template>
 

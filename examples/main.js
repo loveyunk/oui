@@ -37,6 +37,18 @@ const router = new VueRouter({
     {
       path: '/input',
       component: resolve => require(['./routers/input/index'], resolve)
+    },
+    {
+      path: '/tabs',
+      component: resolve => require(['./routers/tabs/index'], resolve)
+    },
+    {
+      path: '/form',
+      component: resolve => require(['./routers/form/index'], resolve)
+    },
+    {
+      path: '/avatar',
+      component: resolve => require(['./routers/avatar/index'], resolve)
     }
   ]
 });

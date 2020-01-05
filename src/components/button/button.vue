@@ -1,5 +1,5 @@
 <template>
-  <button :class="classes" :disabled="disabled" @click="handleClick">
+  <button :class="classes" :disabled="disabled">
     <span v-if="this.$slots.default !== undefined">
       <slot></slot>
     </span>
@@ -7,7 +7,7 @@
 </template>
 
 <script>
-const prefixCls = 'oui-btn';
+const prefixCls = 'o-btn';
 
 export default {
   name: 'Button',
@@ -51,12 +51,6 @@ export default {
           [`${prefixCls}-${this.size}`]: this.size !== 'default'
         }
       ];
-    }
-  },
-  methods: {
-    handleClick(event) {
-      if (this.disabled) return;
-      this.$emit('click', event);
     }
   }
 };

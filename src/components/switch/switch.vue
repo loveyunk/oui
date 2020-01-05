@@ -5,10 +5,10 @@
 </template>
 
 <script>
-const prefixCls = 'oui-switch';
+const prefixCls = 'o-switch';
 
 export default {
-  name: 'Switch',
+  name: 'OSwitch',
   props: {
     value: {
       type: [String, Number, Boolean],

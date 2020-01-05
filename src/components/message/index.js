@@ -1,4 +1,4 @@
-const prefixCls = 'oui-message';
+const prefixCls = 'o-message';
 
 function notice(content, duration, type, onClose) {}
 

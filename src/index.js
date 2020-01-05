@@ -1,19 +1,27 @@
 import Avatar from './components/avatar';
 import Button from './components/button';
+import ButtonGroup from './components/button-group';
 import Message from './components/message';
 import Badge from './components/badge';
 import Icon from './components/icon';
 import OSwitch from './components/switch';
 import Input from './components/input';
+import Tabs from './components/tabs';
+import Form from './components/form';
 
 const components = {
-  Avatar,
-  Button,
+  OAvatar: Avatar,
+  OButton: Button,
+  OButtonGroup: ButtonGroup,
   Message,
   Badge,
   Icon,
   OSwitch,
-  Input
+  OInput: Input,
+  OTabs: Tabs,
+  OTabPane: Tabs.Pane,
+  OForm: Form,
+  OFormItem: Form.Item
 };
 
 const oui = {
